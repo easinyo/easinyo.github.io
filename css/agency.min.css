@@ -228,8 +228,8 @@ header.masthead .intro-text .intro-heading {
     padding-top: 230px;
 }
 	header.masthead .intro-text {
-		width: 75% ;
-		padding-top: 300px;
+
+
 	}
 	header.masthead .intro-text .intro-lead-in {
 		font-size: 40px;
@@ -631,7 +631,7 @@ section#contact .form-group input.form-control {
 }
 
 section#contact .form-group textarea.form-control {
-	height: 248px
+	height: 352px
 }
 
 section#contact .form-control:focus {
@@ -704,4 +704,8 @@ ul.social-buttons li a:active,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
 	background-color: #fed136
+}
+
+.dev-icons {
+    font-size: 3rem;
 }
