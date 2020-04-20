@@ -193,12 +193,19 @@ header.masthead .box0 {
 }
 
 header.masthead .column {
-  width: 25%;
-  padding-top: 250px;
+  width: 100%;
+  padding-top: 100px;
 }
+
+header.masthead.headerContainer{
+	margin-bottom: 100px;
+    margin-top: 100px;
+    height: auto;
+}
+
 header.masthead .intro-text {
-	width: 75%;
-	padding-top: 150px;
+	width: 100%;
+	padding-top: 10px;
 }
 
 header.masthead .intro-text .intro-lead-in {
@@ -224,8 +231,14 @@ header.masthead .intro-text .intro-heading {
 }
 
 	header.masthead .column {
-  	width: 25%;
-    padding-top: 230px;
+  	width: 100%;
+    padding-top: 10px;
+}
+
+header.masthead.headerContainer{
+	margin-bottom: 100px;
+    margin-top: 100px;
+    height: auto;
 }
 	header.masthead .intro-text {
 
