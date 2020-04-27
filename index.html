@@ -15,6 +15,7 @@
       <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
       <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
       <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <!-- Custom styles for this template -->
       <link href="css/agency.min.css" rel="stylesheet">
    </head>
@@ -357,6 +358,15 @@
                                     </br>
                            </div>
                            <div class="timeline-body">
+                              <h5 class ="subheading" style = "text-align: center">Web Developer</h5>
+                              <p class="text-muted" style = " text-align: left">
+
+                                       • Developed and maintained new technologies using.</br>
+                                       • Used Html and CSS to create UI.</br>
+                                       • Built and integrated applications and functionalities to display on the website.</p>
+                                       </br>
+                           </div>
+                           <div class="timeline-body">
                               <h5 class ="subheading" style = "text-align: center">Web Content Developer</h5>
                               <p class="text-muted" style = " text-align: left">
                                        • Prepared content for publication to the web site.</br>
@@ -499,12 +509,13 @@
                         <div class="team-member">
                               <div class="col-lg-12 text-center">
                                  <h5 class="section-heading text-uppercase">Mobile & Web Development</h5>
-                                   <p class="text-muted" style = " text-align: left; margin-bottom: 0;"> Java </p>
-                                   <p class="text-muted" style = " text-align: left; margin-bottom: 0;"> Kotlin </p>
+                                   <p class="text-muted" style = " text-align: left; margin-bottom: 0;"> Java/Kotlin </p>
                                    <p class="text-muted" style = " text-align: left; margin-bottom: 0;"> Android SDK </p>
                                    <p class="text-muted" style = " text-align: left; margin-bottom: 0;"> XML</p>
                                    <p class="text-muted" style = " text-align: left; margin-bottom: 0;"> PHP</p>
                                    <p class="text-muted" style = " text-align: left; margin-bottom: 0;"> HTML5/CSS3</p>
+                                   <p class="text-muted" style = " text-align: left; margin-bottom: 0;"> Bootstrap </p>
+
                                 </br>
 
                                  <h5 class="section-heading text-uppercase">Software Development Methodologies </h5>
@@ -725,7 +736,35 @@
                            <!-- Project Details Go Here -->
                            <h2 class="text-uppercase">Funride</h2>
                            <p class="item-intro text-muted">an Android mobile app.</p>
-                           <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
+                           
+                                <div class="img-fluid d-block mx-auto" style="max-width:1200px">
+                                   <img class="mySlides" src="img/portfolio/slideShow/Funride_UI_1.jpg" style="width:100%;display:none">
+                                   <img class="mySlides" src="img/portfolio/slideShow/Funride_UI_2.jpg" style="width:100%">
+                                   <img class="mySlides" src="img/portfolio/slideShow/Funride_UI_3.jpg" style="width:100%;display:none">
+                                   <img class="mySlides" src="img/portfolio/slideShow/Funride_UI_4.jpg" style="width:100%;display:none">
+                                   <img class="mySlides" src="img/portfolio/slideShow/Funride_UI_5.jpg" style="width:100%;display:none">
+
+                                   <div class="w3-row-padding w3-section">
+                                    <div class="w3-col s3">
+                                       <img class="demo w3-opacity w3-hover-opacity-off" src="img/portfolio/slideShow/Funride_UI_1.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+                                     </div>
+                                     <div class="w3-col s2">
+                                       <img class="demo w3-opacity w3-hover-opacity-off" src="img/portfolio/slideShow/Funride_UI_2.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+                                     </div>
+                                     <div class="w3-col s2">
+                                       <img class="demo w3-opacity w3-hover-opacity-off" src="img/portfolio/slideShow/Funride_UI_3.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+                                     </div>
+                                     <div class="w3-col s2">
+                                       <img class="demo w3-opacity w3-hover-opacity-off" src="img/portfolio/slideShow/Funride_UI_4.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+                                     </div>
+                                     <div class="w3-col s3">
+                                       <img class="demo w3-opacity w3-hover-opacity-off" src="img/portfolio/slideShow/Funride_UI_5.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(5)">
+                                     </div>
+                                   </div>
+                                 </div>
+                       
+<!--                            <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
+ -->
                            <p>FunRide is an 8-month project following the agile methodology where both the front-end and back-end was built from scratch.
 
                            FunRide is a mobile application that will serve as a rideshare platform for traveling between cities in Canada. Ridesharing is a more economical option to travel from Point A to Point B in comparison to trains, busses, or flying. As a result, many people especially students are looking for advertisements in platforms like Kijiji or Craigslist to find these services.
@@ -926,5 +965,27 @@
       <script src="js/contact_me.js"></script>
       <!-- Custom scripts for this template -->
       <script src="js/agency.min.js"></script>
+      <!--SLideShow Script--->
+      <script>
+         function currentDiv(n) {
+           showDivs(slideIndex = n);
+         }
+
+         function showDivs(n) {
+           var i;
+           var x = document.getElementsByClassName("mySlides");
+           var dots = document.getElementsByClassName("demo");
+           if (n > x.length) {slideIndex = 1}
+           if (n < 1) {slideIndex = x.length}
+           for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+           }
+           for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+           }
+           x[slideIndex-1].style.display = "block";
+           dots[slideIndex-1].className += " w3-opacity-off";
+         }
+</script>
    </body>
 </html>
