@@ -9,7 +9,7 @@ jobs:
       with:
         fetch-depth: 2
     - name: FTP-Deploy-Action
-      uses: easinyo/FTP-Deploy-Action@3.1.0
+      uses: SamKirkland/FTP-Deploy-Action@3.1.0
       with:
         ftp-server: ftp://ftp.asinyo.ca/
         ftp-username: admin_easinyo
