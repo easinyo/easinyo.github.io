@@ -12,5 +12,5 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@3.1.0
       with:
         ftp-server: ftp://ftp.asinyo.ca/
-        ftp-username: admin_easinyo
+        ftp-username: easinyo_admin
         ftp-password: ${{ secrets.FTP_PASSWORD }}
